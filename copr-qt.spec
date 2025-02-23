@@ -20,7 +20,7 @@ copr-gui provides an launcher for python3-copr-wxpython.
 cat << 'EOF' > main.py
 #!/usr/bin/python3
 from copr_gui.generic.pyside6 import launcher
-launcher.main(default_icon='%{_iconsdir}/copr.ico')
+launcher.main(default_icon='%{_iconsdir}/copr_qt.ico')
 EOF
 
 cat << 'EOF' > copr.desktop
