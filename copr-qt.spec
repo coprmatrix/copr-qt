@@ -1,12 +1,12 @@
 Name:		copr-qt
-Version:	0.0.1
+Version:	0.0.2
 Release:	2
-Summary:	python3-copr_pyside6 launcher
+Summary:	python3-copr_pyqt6 launcher
 Group:		Applications/Engineering
 License:	GPL-3
 Source1:        favicon.ico
 BuildArch:	noarch
-Requires:       python3dist(copr-pyside6)
+Requires:       python3dist(copr-pyqt6)
 
 %description
 copr-gui provides an launcher for python3-copr-wxpython.
@@ -19,7 +19,7 @@ copr-gui provides an launcher for python3-copr-wxpython.
 %build
 cat << 'EOF' > main.py
 #!/usr/bin/python3
-from copr_gui.generic.pyside6 import launcher
+from copr_gui.generic.pyqt6 import launcher
 launcher.main(default_icon='%{_iconsdir}/copr_qt.ico')
 EOF
 
